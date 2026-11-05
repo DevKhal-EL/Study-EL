@@ -1,8 +1,8 @@
 ![logo-study-el.png](assets/logo.png)   
 
----
 
-# Study-EL
+# Sobre
+
 
 Um ambiente para transformar conhecimento em aplicação prática.
 
