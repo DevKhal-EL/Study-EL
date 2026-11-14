@@ -1,11 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --form-bg: #111722;
+    --input-bg: #1C232F;
+    --input-focus: #0c0449;
+    --border-container: #252D3A;
+}
+
+
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: 0;
 
 }
 
 body {
     margin: 0%;
     padding: 0%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: right;
+    background-image: url(../../assets/background-image.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: aliceblue;
 
 }
+
+.container {
+    position: relative;
+    width: 400px;
+    background-color: var(--form-bg);
+    padding: 80px 25px;
+    text-align: left;
+    border: 1px solid var(--border-container);
+    border-radius: 12px;
+}
+
+.title {
+    margin-bottom: 30px;
+    
+}
+
+.title span, h1 {
+    display: inline-block;
+
+}
+
+.title span {
+    padding: 6px;
+}
+
+form {
+    text-align: left ;
+
+}
+
+.input-field, form .button{
+    margin: 30px 0px;
+    position: relative;
+    height: 50px;
+    width: 100%
+  
+}
+
+.input-field input{
+    width: 100%;
+    height: 100%;
+    border: 0.2px solid rgb(5, 2, 47);
+    border-radius: 6px;
+   
+    background-color: var(--input-bg);
+
+    outline: none;
+    font-size: 18px;
+    margin: 5px 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+
+    transition: .4s;
+
+    
+    
+}
+
+.input-field label {
+    position: absolute;
+    top: 90%;
+    left: 15px;
+    transform: translateY(-30%);
+    pointer-events: none;
+    color: F5F5F7;
+    font-size: 15px;
+  
+}
+
+input:focus {
+    border: 1.5px solid var(--input-focus)
+
+}
+
+#input-email {
+    margin-bottom: 50px;
+
+}
+
