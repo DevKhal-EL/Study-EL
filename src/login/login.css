@@ -32,18 +32,14 @@ body {
 }
 
 .container {
-    position: relative;
-    width: 400px;
+    position: absolute;
+    left: 1200px;
+    top: 140px;
     background-color: var(--form-bg);
-    padding: 80px 25px;
+    padding: 100px 50px;
     text-align: left;
     border: 1px solid var(--border-container);
     border-radius: 12px;
-}
-
-.title {
-    margin-bottom: 30px;
-    
 }
 
 .title span, h1 {
@@ -52,7 +48,7 @@ body {
 }
 
 .title span {
-    padding: 6px;
+    padding: 8px;
 }
 
 form {
@@ -61,14 +57,14 @@ form {
 }
 
 .input-field, form .button{
-    margin: 30px 0px;
+    margin: 45px 0px;
     position: relative;
     height: 50px;
     width: 100%
   
 }
 
-.input-field input{
+.input-field input {
     width: 100%;
     height: 100%;
     border: 0.2px solid rgb(5, 2, 47);
@@ -79,23 +75,21 @@ form {
     outline: none;
     font-size: 18px;
     margin: 5px 0;
-    padding-left: 15px;
+    padding-left: 45px;
+    color: #9299A8;
     box-sizing: border-box;
 
     transition: .4s;
 
-    
-    
 }
 
 .input-field label {
     position: absolute;
-    top: 90%;
-    left: 15px;
-    transform: translateY(-30%);
-    pointer-events: none;
-    color: F5F5F7;
-    font-size: 15px;
+    top: -35%;
+    left: 3px;
+    color: #F5F5F7;
+    font-size: 16px;
+    font-weight: bold;
   
 }
 
@@ -105,7 +99,57 @@ input:focus {
 }
 
 #input-email {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    background-image: url(../../assets/mail.svg);
+    background-position: 10px center;
+    background-repeat: no-repeat;
 
 }
 
+input::placeholder {
+    position: absolute;
+    left:50px;
+    color: #9299A8;
+
+    font-size: 16px;
+
+    
+
+}
+
+#input-password {
+    filter: none;
+    background-image: url(../../assets/lock-keyhole-open.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+  
+
+}
+
+form button {
+    margin-top: 40px;
+
+}
+
+.button button:hover {
+    background-color: #5300d8;
+    transform: scale(1.01);
+
+} 
+
+
+.button button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 6px;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #702BFA;
+
+    transition: background-color 1s ease, transform 1s ease;
+
+}
